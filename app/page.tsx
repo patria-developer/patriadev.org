@@ -1,14 +1,10 @@
-import { Button } from "@/components/ui/button";
+import Hero from '@/components/hero';
+import type { Metadata } from 'next';
 
+export const metadata: Metadata = {
+    title: 'Patria Dev',
+    description: 'Komunitas IT di Blitar',
+};
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <h1 className="text-3xl">Patria Dev</h1>
-        <a href="">
-          <Button>Let&apos;s join us</Button>
-        </a>
-      </main>
-    </div>
-  );
+    return <Hero />;
 }
