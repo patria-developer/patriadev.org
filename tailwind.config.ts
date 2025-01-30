@@ -57,7 +57,7 @@ export default {
                 sm: 'calc(var(--radius) - 4px)',
             },
             backgroundImage: {
-                'hero-pattern': "url('/hero-pattern.svg')",
+                'hero-pattern': "url('/images/hero-pattern.svg')",
             },
         },
     },
