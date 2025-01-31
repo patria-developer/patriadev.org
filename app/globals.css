@@ -69,4 +69,12 @@ body {
     body {
         @apply bg-background text-foreground;
     }
+
+    .font-rubik {
+        font-family: Rubik, Arial, Helvetica, sans-serif;
+    }
+
+    .font-plus-jakarta-sans {
+        font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+    }
 }
