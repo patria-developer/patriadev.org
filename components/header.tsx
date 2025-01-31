@@ -8,7 +8,7 @@ type link = {
     url: string;
 };
 
-const links: link[] = [
+export const navigationLink: link[] = [
     {
         title: 'tentang kami',
         url: '/about-us',
@@ -21,20 +21,26 @@ const links: link[] = [
         title: 'event',
         url: '/event',
     },
+    {
+        title: 'kontak kami',
+        url: '/contact',
+    },
 ];
 export default function Header() {
     return (
         <header className='border-b'>
-            <div className='h-[72px] px-5 xl:px-0 container flex items-center justify-between md:mx-auto'>
+            <div className='container flex h-[72px] items-center justify-between px-5 md:mx-auto xl:px-0'>
                 <Link href='/'>
                     <Image src={logo} alt='patria dev logo' width={40} height={40} />
                 </Link>
-                <div className='hidden md:flex gap-8'>
-                    {links.map(({ title, url }) => (
-                        <Link key={title} href={url} className='capitalize block'>
-                            {title}
-                        </Link>
-                    ))}
+                <div className='hidden gap-8 md:flex'>
+                    {navigationLink
+                        .filter((item) => item.title !== 'kontak kami')
+                        .map(({ title, url }) => (
+                            <Link key={title} href={url} className='block capitalize'>
+                                {title}
+                            </Link>
+                        ))}
                 </div>
                 <Button rounded='pill'>Hubungi Kami</Button>
             </div>
