@@ -11,7 +11,8 @@
         "lint:fix": "eslint --fix 'lib/**/*.{ts,tsx}'",
         "format": "prettier --write '**/*.{ts,tsx,css,js,jsx}' --config ./.prettierrc",
         "prepare": "husky && husky install",
-        "commit": "cz"
+        "commit": "cz",
+        "lint-staged": "lint-staged"
     },
     "dependencies": {
         "@icons-pack/react-simple-icons": "^11.2.0",
@@ -55,6 +56,15 @@
         "commitizen": {
             "path": "@commitlint/cz-commitlint"
         }
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx}": [
+            "eslint --fix --max-warnings=0",
+            "prettier --write"
+        ],
+        "*.{json,css,scss,md}": [
+            "prettier --write"
+        ]
     },
     "release": {
         "branches": [
