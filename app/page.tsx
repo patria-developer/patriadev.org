@@ -1,4 +1,6 @@
-import Hero from '@/components/hero';
+import Benefit from '@/sections/home/benefit';
+import Event from '@/sections/home/event';
+import Hero from '@/sections/home/hero';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -6,5 +8,11 @@ export const metadata: Metadata = {
     description: 'Komunitas IT di Blitar',
 };
 export default function Home() {
-    return <Hero />;
+    return (
+        <>
+            <Hero />
+            <Benefit />
+            <Event />
+        </>
+    );
 }

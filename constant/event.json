@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Sharing Session",
+        "name": "sharing-session",
+        "description": "Belajar langsung dari praktisi berpengalaman tentang teknologi terbaru, best practices, dan tips karir"
+    },
+    {
+        "title": "Weekly Work From Cafe (WFC)",
+        "name": "work-from-cafe",
+        "description": "Networking & coworking bareng sesama software engineer setiap minggu! Kerja lebih produktif sambil ngopi"
+    },
+    {
+        "title": "Mentoring",
+        "name": "mentoring",
+        "description": "Dapatkan bimbingan langsung dari mentor berpengalaman untuk mempercepat perkembangan skill dan karirmu"
+    }
+]
