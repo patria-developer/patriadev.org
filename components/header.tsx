@@ -32,8 +32,11 @@ export default function Header() {
     return (
         <header className='border-b'>
             <div className='container mx-auto flex h-[72px] items-center justify-between px-5 xl:px-0'>
-                <Link href='/'>
+                <Link href='/' className='flex items-center gap-2'>
                     <Image src={logo} alt='patria dev logo' width={40} height={40} />
+                    <p className='font-plus-jakarta-sans text-2xl font-semibold text-primary'>
+                        Patria Dev
+                    </p>
                 </Link>
                 <div className='hidden gap-8 md:flex'>
                     {navigationLink
