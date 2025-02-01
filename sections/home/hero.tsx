@@ -10,12 +10,10 @@ export default function Hero() {
             <div className='flex max-w-[560px] flex-col items-start justify-center'>
                 <CardLabel label='Komunitas IT di Blitar' />
                 <div className='flex flex-col items-start justify-start text-[28px] font-medium leading-10 xl:text-[40px] xl:leading-[48px]'>
-                    <h1 className='mt-6 animate-fadeLeft'>
-                        Dari Bumi Patria untuk
-                        <p className='relative mr-1 block max-w-max pr-3 leading-7 before:absolute before:-top-0.5 before:right-0 before:h-8 before:w-56 before:animate-expandFromRight before:bg-gradient-to-r before:from-primary/0 before:from-20% before:to-primary/25 before:object-right before:duration-300 before:content-[""] after:absolute after:-top-0.5 after:right-0 after:h-8 after:w-1 after:animate-fadeLeft after:rounded-full after:bg-primary after:content-[""] xl:leading-[50px] xl:before:h-[54px] xl:after:h-[54px]'>
-                            Indonesia
-                        </p>
-                    </h1>
+                    <h1 className='mt-6 animate-fadeLeft'>Dari Bumi Patria untuk</h1>
+                    <p className='relative mr-1 block max-w-max pr-3 leading-7 before:absolute before:-top-0.5 before:right-0 before:h-8 before:w-56 before:animate-expandFromRight before:bg-gradient-to-r before:from-primary/0 before:from-20% before:to-primary/25 before:object-right before:duration-300 before:content-[""] after:absolute after:-top-0.5 after:right-0 after:h-8 after:w-1 after:animate-fadeRight after:rounded-full after:bg-primary after:content-[""] xl:leading-[50px] xl:before:h-[54px] xl:after:h-[54px]'>
+                        Indonesia
+                    </p>
                 </div>
                 <p className='mt-5 animate-fadeUp text-secondary xl:text-lg'>
                     Patria Dev hadir untuk menyatukan para developer, designer, dan tech enthusiast
